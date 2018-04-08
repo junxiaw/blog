@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Check versions of Docker Engine, Compose, and Machine123docker versiondocker-composedocker-machine 第一次运行nginx12docker run -d -p 80:80 --name webserver nginx//In a web browser, go to http://localhost/">
+<meta name="description" content="错误信息 1org.dom4j.DocumentException: no protocol 123String result = linkCredito();//返回的是xml文件内容，encoding=&amp;apos;iso-8859-1&amp;apos;Document doc = saxReader.read(new ByteArrayInputStream(result.getBytes()));">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Docker常用命令">
-<meta property="og:url" content="http://yoursite.com/2018/04/03/Docker常用命令/index.html">
+<meta property="og:title" content="org.dom4j.DocumentException: no protocol">
+<meta property="og:url" content="http://yoursite.com/2018/04/08/org-dom4j-DocumentException-no-protocol/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Check versions of Docker Engine, Compose, and Machine123docker versiondocker-composedocker-machine 第一次运行nginx12docker run -d -p 80:80 --name webserver nginx//In a web browser, go to http://localhost/">
+<meta property="og:description" content="错误信息 1org.dom4j.DocumentException: no protocol 123String result = linkCredito();//返回的是xml文件内容，encoding=&amp;apos;iso-8859-1&amp;apos;Document doc = saxReader.read(new ByteArrayInputStream(result.getBytes()));">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-03T03:15:12.000Z">
+<meta property="og:updated_time" content="2018-04-08T10:22:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Docker常用命令">
-<meta name="twitter:description" content="Check versions of Docker Engine, Compose, and Machine123docker versiondocker-composedocker-machine 第一次运行nginx12docker run -d -p 80:80 --name webserver nginx//In a web browser, go to http://localhost/">
+<meta name="twitter:title" content="org.dom4j.DocumentException: no protocol">
+<meta name="twitter:description" content="错误信息 1org.dom4j.DocumentException: no protocol 123String result = linkCredito();//返回的是xml文件内容，encoding=&amp;apos;iso-8859-1&amp;apos;Document doc = saxReader.read(new ByteArrayInputStream(result.getBytes()));">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/03/Docker常用命令/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/08/org-dom4j-DocumentException-no-protocol/"/>
 
 
 
 
 
-  <title>Docker常用命令 | Hexo</title>
+  <title>org.dom4j.DocumentException: no protocol | Hexo</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/03/Docker常用命令/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/08/org-dom4j-DocumentException-no-protocol/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Docker常用命令</h1>
+          <h1 class="post-title" itemprop="name headline">org.dom4j.DocumentException: no protocol</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-03T11:10:05+08:00">
-                2018-04-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-08T18:10:34+08:00">
+                2018-04-08
               </time>
             
 
@@ -299,15 +299,9 @@
       
 
       
-        <h4 id="Check-versions-of-Docker-Engine-Compose-and-Machine"><a href="#Check-versions-of-Docker-Engine-Compose-and-Machine" class="headerlink" title="Check versions of Docker Engine, Compose, and Machine"></a>Check versions of Docker Engine, Compose, and Machine</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker version</span><br><span class="line">docker-compose</span><br><span class="line">docker-machine</span><br></pre></td></tr></table></figure>
-<h4 id="第一次运行nginx"><a href="#第一次运行nginx" class="headerlink" title="第一次运行nginx"></a>第一次运行nginx</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 80:80 --name webserver nginx</span><br><span class="line">//In a web browser, go to http://localhost/ to bring up the home page.</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 可以看到正在运行服务的信息，启动时间、端口号、服务名等信息</span><br><span class="line">docker ps</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># A stopped container will not show up with docker ps; for that, you need to run docker ps -a.</span><br><span class="line">docker ps -a</span><br></pre></td></tr></table></figure>
-<h4 id="Stop-the-webserver"><a href="#Stop-the-webserver" class="headerlink" title="Stop the webserver"></a>Stop the webserver</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop webserver</span><br></pre></td></tr></table></figure>
-<h4 id="Start-it-again"><a href="#Start-it-again" class="headerlink" title="Start it again"></a>Start it again</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start webserver</span><br></pre></td></tr></table></figure>
-<h4 id="To-stop-and-remove-the-running-container-with-a-single-command"><a href="#To-stop-and-remove-the-running-container-with-a-single-command" class="headerlink" title="To stop and remove the running container with a single command"></a>To stop and remove the running container with a single command</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rm -f webserver</span><br></pre></td></tr></table></figure>
-<h4 id="List-local-images"><a href="#List-local-images" class="headerlink" title="List local images"></a>List local images</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
-<h4 id="To-remove-an-image-you-no-longer-need"><a href="#To-remove-an-image-you-no-longer-need" class="headerlink" title="To remove an image you no longer need"></a>To remove an image you no longer need</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi nginx //删除nginx图片</span><br></pre></td></tr></table></figure>
+        <p>错误信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org.dom4j.DocumentException: no protocol</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String result = linkCredito();//返回的是xml文件内容，encoding=&apos;iso-8859-1&apos;</span><br><span class="line">Document doc = saxReader.read(new ByteArrayInputStream(result.getBytes())); //错误代码</span><br><span class="line">Document doc = saxReader.read(new ByteArrayInputStream(result.getBytes(&quot;UTF-8&quot;)));//改后代码，正常运行</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -332,8 +326,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/02/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/04/03/Apache-common包的使用/" rel="next" title="Apache common包的使用">
+                <i class="fa fa-chevron-left"></i> Apache common包的使用
               </a>
             
           </div>
@@ -341,10 +335,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/03/Apache-common包的使用/" rel="prev" title="Apache common包的使用">
-                Apache common包的使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -396,17 +386,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -448,22 +429,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Check-versions-of-Docker-Engine-Compose-and-Machine"><span class="nav-number">1.</span> <span class="nav-text">Check versions of Docker Engine, Compose, and Machine</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第一次运行nginx"><span class="nav-number">2.</span> <span class="nav-text">第一次运行nginx</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Stop-the-webserver"><span class="nav-number">3.</span> <span class="nav-text">Stop the webserver</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Start-it-again"><span class="nav-number">4.</span> <span class="nav-text">Start it again</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-stop-and-remove-the-running-container-with-a-single-command"><span class="nav-number">5.</span> <span class="nav-text">To stop and remove the running container with a single command</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#List-local-images"><span class="nav-number">6.</span> <span class="nav-text">List local images</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-remove-an-image-you-no-longer-need"><span class="nav-number">7.</span> <span class="nav-text">To remove an image you no longer need</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
