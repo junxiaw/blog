@@ -229,6 +229,249 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/JsonUnflattener将一维json串转为实体类对象/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/JsonUnflattener将一维json串转为实体类对象/" itemprop="url">JsonUnflattener将一维json串转为实体类对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T19:20:49+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="maven-依赖"><a href="#maven-依赖" class="headerlink" title="maven 依赖"></a>maven 依赖</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">	&lt;groupId&gt;com.github.wnameless&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;json-flattener&lt;/artifactId&gt;</span><br><span class="line">	&lt;version&gt;0.4.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="JsonUnflattener-unflatten"><a href="#JsonUnflattener-unflatten" class="headerlink" title="JsonUnflattener.unflatten"></a>JsonUnflattener.unflatten</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">JSONObject jsonObject = JSONObject.fromObject(elementService.getMap());</span><br><span class="line">//logger.info(jsonObject.toString());</span><br><span class="line">String unflattenJson = JsonUnflattener.unflatten(jsonObject.toString());</span><br><span class="line">//logger.info(unflattenJson);</span><br></pre></td></tr></table></figure>
+<h4 id="转换前字符串"><a href="#转换前字符串" class="headerlink" title="转换前字符串"></a>转换前字符串</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;registro.status&quot;:&quot;1&quot;,&quot;registro.nome&quot;:&quot;SUELI&quot;,&quot;registro.sobrenome&quot;:&quot;BERNARDO BRITO&quot;,&quot;registro.telefone&quot;:&quot;1100128500&quot;,&quot;registro.endereco&quot;:&quot;RUA SIVI&quot;,&quot;registro.numero&quot;:&quot;20&quot;,&quot;registro.complemento&quot;:&quot;CS FR&quot;,&quot;registro.bairro&quot;:&quot;CIDADE INDUSTRIAL SATELITE DE SAO PAULO&quot;,&quot;registro.cep&quot;:&quot;07222190&quot;,&quot;registro.cidade&quot;:&quot;GUARULHOS&quot;,&quot;registro.uf&quot;:&quot;SP&quot;,&quot;registro.cpfcnpj&quot;:&quot;12345678900&quot;,&quot;registro.mae&quot;:&quot;TERESINHA&quot;,&quot;registro.sobrenomemae&quot;:&quot;DE FATIMA BERNARDO&quot;,&quot;registro.nasc&quot;:&quot;1995-08-05&quot;,&quot;registro.protocolo&quot;:&quot;320978777&quot;&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="转换后字符串"><a href="#转换后字符串" class="headerlink" title="转换后字符串"></a>转换后字符串</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;registro&quot;:&#123;&quot;status&quot;:&quot;1&quot;,&quot;nome&quot;:&quot;SUELI&quot;,&quot;sobrenome&quot;:&quot;BERNARDO BRITO&quot;,&quot;telefone&quot;:&quot;1100128500&quot;,&quot;endereco&quot;:&quot;RUA SIVI&quot;,&quot;numero&quot;:&quot;20&quot;,&quot;complemento&quot;:&quot;CS FR&quot;,&quot;bairro&quot;:&quot;CIDADE INDUSTRIAL SATELITE DE SAO PAULO&quot;,&quot;cep&quot;:&quot;00222100&quot;,&quot;cidade&quot;:&quot;GUARULHOS&quot;,&quot;uf&quot;:&quot;SP&quot;,&quot;cpfcnpj&quot;:&quot;12345678900&quot;,&quot;mae&quot;:&quot;TERESINHA&quot;,&quot;sobrenomemae&quot;:&quot;DE FATIMA BERNARDO&quot;,&quot;nasc&quot;:&quot;1995-08-05&quot;,&quot;protocolo&quot;:&quot;320978116&quot;&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/lombok使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/lombok使用/" itemprop="url">lombok使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T19:10:42+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="maven-依赖"><a href="#maven-依赖" class="headerlink" title="maven 依赖"></a>maven 依赖</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">	&lt;groupId&gt;org.projectlombok&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;lombok&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="实体类中免写getter-setter-方法"><a href="#实体类中免写getter-setter-方法" class="headerlink" title="实体类中免写getter setter 方法"></a>实体类中免写getter setter 方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@Getter @Setter</span><br><span class="line">public class Proposta &#123;</span><br><span class="line">    private String id;</span><br><span class="line">    private Long userId;</span><br><span class="line">    private String pessoaisId;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/SpringBoot中MongoDB注解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1139,7 +1382,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1152,7 +1395,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
