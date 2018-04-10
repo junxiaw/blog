@@ -229,6 +229,126 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/根据wsdl文件生成客户端代码/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/根据wsdl文件生成客户端代码/" itemprop="url">根据wsdl文件生成客户端代码</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T18:16:52+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="项目路径下使用如下命令"><a href="#项目路径下使用如下命令" class="headerlink" title="项目路径下使用如下命令"></a>项目路径下使用如下命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsimport -keep -p com.junxia.test.credilink.service.ws -s /Users/junxiawang/br_item/test/test-credilink/src/main/java http://consulta.confirmeonline.com.br/Integracao/Consulta?wsdl</span><br></pre></td></tr></table></figure>
+<h4 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//指定生成文件包名</span><br><span class="line">-p 参数后的 com.junxia.test.credilink.service.ws</span><br><span class="line"></span><br><span class="line">//指定生成路径  参数：-d 或 -s(不生成.class文件)</span><br><span class="line">-s 参数后的 /Users/junxiawang/br_item/test/test-credilink/src/main/java</span><br><span class="line"></span><br><span class="line">//wsdl 文件访问路径</span><br><span class="line">http://consulta.confirmeonline.com.br/Integracao/Consulta?wsdl</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/09/git-命令ssh连接不成功Host-key-verification-failed/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -551,6 +671,8 @@
 <h4 id="两个字符串比较时忽略大小写"><a href="#两个字符串比较时忽略大小写" class="headerlink" title="两个字符串比较时忽略大小写"></a>两个字符串比较时忽略大小写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* StringUtils.equalsIgnoreCase(null, null)   = true </span><br><span class="line">* StringUtils.equalsIgnoreCase(null, &quot;abc&quot;)  = false </span><br><span class="line">* StringUtils.equalsIgnoreCase(&quot;abc&quot;, null)  = false </span><br><span class="line">* StringUtils.equalsIgnoreCase(&quot;abc&quot;, &quot;abc&quot;) = true </span><br><span class="line">* StringUtils.equalsIgnoreCase(&quot;abc&quot;, &quot;ABC&quot;) = true</span><br></pre></td></tr></table></figure>
 <h4 id="字符串比较"><a href="#字符串比较" class="headerlink" title="字符串比较"></a>字符串比较</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* StringUtils.equals(null, null)   = true </span><br><span class="line">* StringUtils.equals(null, &quot;abc&quot;)  = false </span><br><span class="line">* StringUtils.equals(&quot;abc&quot;, null)  = false </span><br><span class="line">* StringUtils.equals(&quot;abc&quot;, &quot;abc&quot;) = true </span><br><span class="line">* StringUtils.equals(&quot;abc&quot;, &quot;ABC&quot;) = false</span><br></pre></td></tr></table></figure>
 <h4 id="字符串首字母大写"><a href="#字符串首字母大写" class="headerlink" title="字符串首字母大写"></a>字符串首字母大写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* StringUtils.capitalize(null)  = null </span><br><span class="line">* StringUtils.capitalize(&quot;&quot;)    = &quot;&quot; </span><br><span class="line">* StringUtils.capitalize(&quot;cat&quot;) = &quot;Cat&quot; </span><br><span class="line">* StringUtils.capitalize(&quot;cAt&quot;) = &quot;CAt&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="字母全部转为大写"><a href="#字母全部转为大写" class="headerlink" title="字母全部转为大写"></a>字母全部转为大写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">StringUtils.upperCase(&quot;abc&quot;) = &quot;ABC&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="字母全部转为小写"><a href="#字母全部转为小写" class="headerlink" title="字母全部转为小写"></a>字母全部转为小写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">StringUtils.lowerCase(&quot;ABC&quot;)  = &quot;abc&quot;</span><br></pre></td></tr></table></figure>
 <h4 id="两个参数的-join-方法"><a href="#两个参数的-join-方法" class="headerlink" title="两个参数的 join 方法"></a>两个参数的 join 方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* StringUtils.join(null, *)               = null </span><br><span class="line">* StringUtils.join([], *)                 = &quot;&quot; </span><br><span class="line">* StringUtils.join([null], *)             = &quot;&quot; </span><br><span class="line">* StringUtils.join([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;], &apos;;&apos;)  = &quot;a;b;c&quot; </span><br><span class="line">* StringUtils.join([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;], null) = &quot;abc&quot; </span><br><span class="line">* StringUtils.join([null, &quot;&quot;, &quot;a&quot;], &apos;;&apos;)  = &quot;;;a&quot;</span><br></pre></td></tr></table></figure>
 <h3 id="NumberUtils-工具类"><a href="#NumberUtils-工具类" class="headerlink" title="NumberUtils 工具类"></a>NumberUtils 工具类</h3><p>字符串转各种数值型，转换失败则返回defaultValue</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NumberUtils.toInt(null) = 0</span><br><span class="line">NumberUtils.toInt(&quot;&quot;) = 0</span><br><span class="line">NumberUtils.toInt(&quot;123&quot;) = 123</span><br></pre></td></tr></table></figure>
@@ -891,7 +1013,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -899,6 +1021,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
